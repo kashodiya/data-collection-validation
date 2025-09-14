@@ -1,0 +1,12 @@
+INFO:     Will watch for changes in these directories: ['/workspace/mdrm-data-system/backend']
+INFO:     Uvicorn running on http://0.0.0.0:52308 (Press CTRL+C to quit)
+INFO:     Started reloader process [14003] using StatReload
+/openhands/poetry/openhands-ai-5O4_aCHf-py3.12/lib/python3.12/site-packages/pydantic/_internal/_config.py:373: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [14005]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:36186 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33504 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41384 - "GET /api/health HTTP/1.1" 200 OK
