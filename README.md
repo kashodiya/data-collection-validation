@@ -3,6 +3,39 @@
 
 A web-based system for collecting and validating data from various financial institutions based on MDRM (Micro Data Reference Manual) standards.
 
+**Note:** This project was completely developed using [OpenHands AI Software Engineer](https://github.com/All-Hands-AI/OpenHands).
+
+### Starting Prompt
+
+The following prompt was the starting point for this project:
+
+```
+I want to create a web based system, which can collect data from various institutions. Data is defined as series or reports. Each series has set off data elements. This data elements are called MDRM. When the data is submitted by the institutions, they are validated using set of rules defined by our internal analysts. 
+
+The system will have flxible system of managing data validation rules. Some rules may use the direct and computed values of previously submitted reports. 
+
+The system should also define the data format in which the data will be uploaded. 
+
+You can learn about MDRM here: https://www.federalreserve.gov/data/mdrm.htm
+You can download MDRM data dictionary from: https://www.federalreserve.gov/apps/mdrm/pdf/MDRM.zip
+You can learn about data dictionary columns etc. here: https://www.federalreserve.gov/apps/mdrm/download_mdrm.htm
+
+We also publish a PDF form for each report. Along with the report we publish instructions. You can search such forms and instructions here: https://www.federalreserve.gov/apps/reportingforms
+
+You can find complete list of series or reports here: https://www.federalreserve.gov/apps/mdrm/series
+
+## Guide
+- Use Python
+- Use one server for both serving web app as well as serving APIs
+- Juse use FastAPI for app and api server (do not use Flask)
+- Use SQLite for DB
+- Use React for frontend
+- Keep architecture simple
+- Use uv for Python package management
+- Keep authentication system simple, using password in the database
+- Keep simple role based access control. We will have external users, internal anaysts and admin roles.
+```
+
 ## Overview
 
 This system allows financial institutions to submit reports containing MDRM data elements. The data is validated using configurable rules defined by internal analysts. The system supports:
